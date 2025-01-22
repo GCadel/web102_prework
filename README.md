@@ -30,9 +30,7 @@ The following **optional** features are implemented:
 
 Check out the short video demo here:
 
-<video width="320" height="240" controls>
-  <source src="Sea Monster site demo.mp4" type="video/mp4">
-</video>
+- https://youtube.com/shorts/Y0w5bIk9z-4
 
 ## Notes
 

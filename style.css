@@ -1,8 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
 
+
 body {
     font-family: 'Cabin';
-    background-color: #758190;
+    background: radial-gradient(ellipse at top left,#141d22,#0c2b40, transparent),
+    radial-gradient(ellipse, #1507d4,#541e3f);
+    color: rgba(255, 255, 255, 0.95);
+    margin: 0;
+}
+
+body > * {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 #tentacles {
@@ -11,20 +24,43 @@ body {
 
 .header {
     display: flex;
-    background-color: lightblue;
-    padding: 1%;
     align-items: center;
-    margin-left: -10px;
-    margin-right: -10px;
-    margin-top: -10px;
+    justify-content: space-between;
+    
+}
+
+.center p {
+    color: rgba(255, 255, 255, 0.859);
+}
+
+.special {
+    color: rgba(114, 147, 255, 0.778);
+}
+
+h1 {
+    font-size: 1.75rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.2rem;
 }
 
 .stats-container {
     display: flex;
+    /* flex-direction: column; */
+}
+
+.stats-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0 30px lightblue;
 }
 
 .stats-card {
-    background-color: #a8b0bc;
+    
     border-radius: 7px;
     padding: 1%;
     margin: 1%;
@@ -45,11 +81,15 @@ body {
 .game-img {
     width: 100%;
     border-radius: 5px;
-    box-shadow: 0 0 10px #FFFFFF;
+    
+}
+
+.game-card, .stats-card {
+    background-color: rgba(153, 153, 153, 0.27);
 }
 
 .game-card {
-    background-color: #FFFFFF;
+    
     padding: 1%;
     margin: 1%;
     width: 300px;
@@ -72,4 +112,75 @@ button {
     padding: 1%;
     margin: 1%;
     border-radius: 7px;
+}
+
+#search-container {
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+}
+
+#search-container > * {
+    height: 2.5rem;
+    
+    align-self: center;
+    
+}
+
+#submit-search {
+    border-radius: 5% 50% 50% 5%;
+    background-color: rgba(255, 255, 255, 0.075);
+    cursor: pointer;
+}
+
+#title-query {
+    padding: .5rem;
+    border-radius: .25rem;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.099);
+    color: white;
+}
+
+#title-query:focus {
+    outline: dodgerblue 2px solid;
+    color: white;
+}
+
+/* Bonus: Adding Nav */
+
+#site-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+#site-nav a, #action {
+    color: inherit;
+    text-decoration: none;
+}
+
+#action {
+    font-size: 1.5em;
+    background-color: #291ebe;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    margin: 0 auto;
+    display: block;
+    max-width: fit-content;
+}
+
+#action:hover {
+    background-color: #3226e6;
+}
+
+#site-nav a:hover {
+    color: blue;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.center {
+    text-align: center;
 }

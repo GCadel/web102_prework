@@ -24,13 +24,14 @@ The following **optional** features are implemented:
 
 - [x] Performed a CSS update to change the feel of the website.
 - [x] Added a search function to find games by title.
-- [x] Added naviggation and action button to take user to listed games.
+- [x] Added navigation and action button to take user to listed games.
 
-## Video Walkthrough
+## GIF Demo
 
-Check out the short video demo here:
+Check out the short demo GIF here:
 
-- https://youtube.com/shorts/Y0w5bIk9z-4
+![Sea Monster Site Demo GIF](./sea-monster-demo-gcadel.gif) GIF created with
+[ScreenToGIF](https://www.screentogif.com/)
 
 ## Notes
 
